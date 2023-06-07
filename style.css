@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.container h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+.error {
+    color: #ff0000;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.login-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.user-info p {
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.exit_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #a70000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.exit_btn:hover {
+    background-color: #cc0000;
+}
+
+
+.success {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .user-info {
+        margin-top: 60px;
+    }
+
+    .success {
+        font-size: 14px;
+        padding: 5px 8px;
+        top: 5px;
+    }
+}
+
